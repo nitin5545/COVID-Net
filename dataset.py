@@ -20,7 +20,7 @@ class COVID19(Dataset):
         self.tf = tf
         
     def __len__(self):
-        return len(df)
+        return len(self.df)
     
     def __getitem__(self, idx):
         _, img_path, labels = self.df.iloc[idx]
